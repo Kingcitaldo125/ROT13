@@ -11,6 +11,41 @@ This repo seeks to retain different programming language implementations of that
 The following languages are currently being supported:
 
 - **C++**(C++ 11)
+- **Python**(Python 3)
+
+## Usage
+
+### C++
+
+Simply run the `main.cpp` source file though a compiler that is C++11 compliant, then run the executable.
+E.x:
+
+**Linux**
+
+```
+g++ --std=c++11 -o out main.cpp
+./out
+```
+
+**Windows**
+
+I had used MSVC++ (Visual Studio 2017) to compile the source.
+I have not tried compiling using MinGW.
+For more information on Visual Studio, click this [link](https://visualstudio.microsoft.com/).
+
+### Python
+
+Simply open a terminal/command prompt window, and type the following:
+
+`python main.py this is a test string`
+
+The output should appear like the following:
+
+```
+Result: guvf vf n grfg fgevat
+Original: this is a test string
+
+```
 
 ## License
 

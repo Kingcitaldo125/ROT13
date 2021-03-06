@@ -18,6 +18,12 @@ class ROT13:
 			self.charmap[charr.lower()] = chr(ord(charr) - 13).lower()
 
 		self.charmap[" "] = " "
+		# Numerics
+		for i in range(ord('0'),ord(':')):
+			self.charmap[chr(i)] = chr(i)
+		# Basic special ASCII characters
+		for i in range(ord('!'),ord('0')):
+			self.charmap[chr(i)] = chr(i)
 	def process(self,stringg):
 		nstr=""
 		for i in stringg:

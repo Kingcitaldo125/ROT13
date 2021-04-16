@@ -87,11 +87,14 @@ std::string ROT13::process(const std::string& string)
 }
 
 
-int main()
+int main(int argc, char* argv[])
 {
-	ROT13 r13;
-
 	std::string m_string("This is a string to encode");
+
+	if (argc == 2)
+		m_string = argc[1];
+
+	ROT13 r13;
 
 	std::string result = r13.process(m_string);
 
